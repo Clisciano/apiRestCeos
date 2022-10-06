@@ -1,3 +1,4 @@
+// BD SQL SERVER
 // const config = {
 //     dialect: 'mssql',
 //     database: 'ctlab',
@@ -19,6 +20,8 @@
 // };
 
 // module.exports = config;
+
+// BD postgres
 module.exports = {
     dialect: 'postgres',
     host: 'ceus.postgres.uhserver.com',
