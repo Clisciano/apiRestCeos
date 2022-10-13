@@ -1,4 +1,4 @@
-import FilePhoto from '../models/FilePhoto';
+import FilePhoto from '../models/FilePhoto.js';
 
 class FileController {
     async store(req, res) {

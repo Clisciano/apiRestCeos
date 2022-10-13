@@ -1,4 +1,4 @@
-import FileSignature from '../models/FileSignature';
+import FileSignature from '../models/FileSignature.js';
 
 class FileSignaturesController {
     async store(req, res) {

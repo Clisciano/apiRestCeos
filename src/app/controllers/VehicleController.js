@@ -1,5 +1,5 @@
-import Vehicle from '../models/Vehicle';
-import PhysicalPerson from '../models/PhysicalPerson';
+import Vehicle from '../models/Vehicle.js';
+import PhysicalPerson from '../models/PhysicalPerson.js';
 
 class VehicleController {
     async store(req, res) {

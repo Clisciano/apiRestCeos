@@ -1,6 +1,14 @@
 import multer from 'multer';
+// const multer = require("multer")
 import crypto from 'crypto';
-import { extname, resolve } from 'path';
+// const crypto = require("crypto")
+import { extname, resolve, dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+// const extname = require("path")
+// const resolve = require("path")
 
 export default {
     storage: multer.diskStorage({

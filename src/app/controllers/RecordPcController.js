@@ -1,5 +1,5 @@
-import RecordPc from '../models/RecordPc';
-import PhysicalPerson from '../models/PhysicalPerson';
+import RecordPc from '../models/RecordPc.js';
+import PhysicalPerson from '../models/PhysicalPerson.js';
 
 class RecordPcController {
     async store(req, res) {

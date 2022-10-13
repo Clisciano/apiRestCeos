@@ -1,7 +1,7 @@
 import Sequelize, { Model } from 'sequelize';
-import PhysicalPerson from './PhysicalPerson';
+import PhysicalPerson from './PhysicalPerson.js';
 
-import Visitor from './Visitors';
+import Visitor from './Visitors.js';
 
 class Infopen extends Model {
     static init(sequelize) {

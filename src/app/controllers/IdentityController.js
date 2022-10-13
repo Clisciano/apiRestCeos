@@ -1,5 +1,5 @@
-import Identity from '../models/Identity';
-import PhysicalPerson from '../models/PhysicalPerson';
+import Identity from '../models/Identity.js';
+import PhysicalPerson from '../models/PhysicalPerson.js';
 
 class IdentityController {
     async store(req, res) {

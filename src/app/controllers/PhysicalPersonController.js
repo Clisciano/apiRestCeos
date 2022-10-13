@@ -1,5 +1,5 @@
-import FilePhoto from '../models/FilePhoto';
-import PhysicalPerson from '../models/PhysicalPerson';
+import FilePhoto from '../models/FilePhoto.js';
+import PhysicalPerson from '../models/PhysicalPerson.js';
 
 class PhysicalPersonController {
     async store(req, res) {

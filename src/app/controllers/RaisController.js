@@ -1,5 +1,5 @@
-import Rais from '../models/Rais';
-import PhysicalPerson from '../models/PhysicalPerson';
+import Rais from '../models/Rais.js';
+import PhysicalPerson from '../models/PhysicalPerson.js';
 
 class RaisController {
     async store(req, res) {

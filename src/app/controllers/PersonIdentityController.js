@@ -1,5 +1,5 @@
 // import PhysicalPerson from '../models/PhysicalPerson';
-import Identity from '../models/Identity';
+import Identity from '../models/Identity.js';
 
 class PersonIdentityController {
     async show(req, res) {

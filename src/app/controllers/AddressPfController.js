@@ -1,5 +1,5 @@
-import Address from '../models/AddressPf';
-import PhysicalPerson from '../models/PhysicalPerson';
+import Address from '../models/AddressPf.js';
+import PhysicalPerson from '../models/PhysicalPerson.js';
 
 class AddressController {
     async store(req, res) {

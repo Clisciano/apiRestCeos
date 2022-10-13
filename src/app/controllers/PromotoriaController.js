@@ -1,4 +1,4 @@
-import Promotorias from '../models/Promotoria';
+import Promotorias from '../models/Promotoria.js';
 
 class PromotoriaController {
     async store(req, res) {

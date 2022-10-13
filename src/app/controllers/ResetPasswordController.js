@@ -1,11 +1,11 @@
 import { format } from 'date-fns';
-import { ptBR } from 'date-fns/locale';
+import { ptBR } from 'date-fns/locale/index.js';
 
-import bcrypt from 'bcryptjs/dist/bcrypt';
+import bcrypt from 'bcryptjs/dist/bcrypt.js';
 import randomstring from 'randomstring';
 import nodemailer from 'nodemailer';
 
-import User from '../models/User';
+import User from '../models/User.js';
 
 class ResetPasswordController {
     async store(req, res) {

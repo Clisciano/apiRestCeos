@@ -22,7 +22,7 @@
 // module.exports = config;
 
 // BD postgres
-module.exports = {
+export default  {
     dialect: 'postgres',
     host: 'ceus.postgres.uhserver.com',
     username: 'clisciano',
@@ -34,3 +34,5 @@ module.exports = {
         underscoredAll: true,
     },
 };
+
+// module.exports = config;

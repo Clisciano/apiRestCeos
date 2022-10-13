@@ -1,6 +1,6 @@
-import Visitor from '../models/Visitors';
-import PhysicalPerson from '../models/PhysicalPerson';
-import Infopen from '../models/infopen';
+import Visitor from '../models/Visitors.js';
+// import PhysicalPerson from '../models/PhysicalPerson';
+import Infopen from '../models/infopen.js';
 
 class VisitorController {
     async store(req, res) {

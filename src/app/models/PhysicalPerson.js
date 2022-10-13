@@ -1,16 +1,16 @@
 import Sequelize, { Model } from 'sequelize';
-import FilePhoto from './FilePhoto';
-import FileSignature from './FileSignature';
-import Identity from './Identity';
-import Address from './AddressPf';
-import Contact from './Contact';
-import Vehicle from './Vehicle';
-import Rais from './Rais';
-import Company from './Company';
-import RecordPc from './RecordPc';
-import CourtQuery from './CourtQuery';
-import Infopen from './infopen';
-import User from './User';
+import FilePhoto from './FilePhoto.js';
+import FileSignature from './FileSignature.js';
+import Identity from './Identity.js';
+import Address from './AddressPf.js';
+import Contact from './Contact.js';
+import Vehicle from './Vehicle.js';
+import Rais from './Rais.js';
+import Company from './Company.js';
+import RecordPc from './RecordPc.js';
+import CourtQuery from './CourtQuery.js';
+import Infopen from './infopen.js';
+import User from './User.js';
 
 class PhysicalPerson extends Model {
     static init(sequelize) {

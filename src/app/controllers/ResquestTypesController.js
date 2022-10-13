@@ -1,4 +1,4 @@
-import RequestTypes from '../models/RequestTypes';
+import RequestTypes from '../models/RequestTypes.js';
 
 class RequestTypesController {
     async store(req, res) {

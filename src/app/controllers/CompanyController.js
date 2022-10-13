@@ -1,5 +1,5 @@
-import Company from '../models/Company';
-import PhysicalPerson from '../models/PhysicalPerson';
+import Company from '../models/Company.js';
+import PhysicalPerson from '../models/PhysicalPerson.js';
 
 class CompanyController {
     async store(req, res) {

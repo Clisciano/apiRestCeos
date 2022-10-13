@@ -1,5 +1,5 @@
 import Sequelize, { Model } from 'sequelize';
-import PhysicalPerson from './PhysicalPerson';
+import PhysicalPerson from './PhysicalPerson.js';
 
 class RocordPc extends Model {
     static init(sequelize) {

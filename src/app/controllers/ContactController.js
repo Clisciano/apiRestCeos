@@ -1,5 +1,5 @@
-import Contact from '../models/Contact';
-import PhysicalPerson from '../models/PhysicalPerson';
+import Contact from '../models/Contact.js';
+import PhysicalPerson from '../models/PhysicalPerson.js';
 
 class ContactController {
     async store(req, res) {

@@ -1,5 +1,5 @@
-import CourtQuery from '../models/CourtQuery';
-import PhysicalPerson from '../models/PhysicalPerson';
+import CourtQuery from '../models/CourtQuery.js';
+import PhysicalPerson from '../models/PhysicalPerson.js';
 
 class CourtQueryController {
     async store(req, res) {

@@ -1,5 +1,5 @@
-import Weapon from '../models/Weapon';
-import PhysicalPerson from '../models/PhysicalPerson';
+import Weapon from '../models/Weapon.js';
+import PhysicalPerson from '../models/PhysicalPerson.js';
 
 class WeaponController {
     async store(req, res) {
