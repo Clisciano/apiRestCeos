@@ -10,7 +10,7 @@ class FilePhoto extends Model {
                 url: {
                     type: Sequelize.VIRTUAL,
                     get() {
-                        return `http://localhost:3000/filesPhotos/${this.path}`;
+                        return `http://134.209.74.174/filesPhotos/${this.path}`;
                     },
                 },
             },
