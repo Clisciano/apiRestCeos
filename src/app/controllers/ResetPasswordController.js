@@ -28,12 +28,21 @@ class ResetPasswordController {
             password_hash: bcrypt.hashSync(password.toString(), 8),
         });
 
+        // const transporter = nodemailer.createTransport({
+        //     host: 'smtp.mailtrap.io',
+        //     port: 2525,
+        //     auth: {
+        //         user: 'a7de5befbd765c',
+        //         pass: 'd2b0c63638091d',
+        //     },
+        // });
+
         const transporter = nodemailer.createTransport({
-            host: 'smtp.mailtrap.io',
-            port: 2525,
+            host: 'activesync.mppa.mp.br',
+            port: 993,
             auth: {
-                user: 'a7de5befbd765c',
-                pass: 'd2b0c63638091d',
+                user: 'clisciano@mppa.mp.br',
+                pass: 'Mateus.analaura',
             },
         });
 
