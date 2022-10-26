@@ -38,11 +38,11 @@ class ResetPasswordController {
         // });
 
         const transporter = nodemailer.createTransport({
-            host: 'activesync.mppa.mp.br',
-            port: 993,
+            host: 'smtp.gmail.com',
+            port: 587,
             auth: {
-                user: 'clisciano@mppa.mp.br',
-                pass: 'Mateus.analaura',
+                user: 'suporteceus@gmail.com',
+                pass: 'nqyuyyvaxsxihfiv',
             },
         });
 
