@@ -11,7 +11,9 @@ class FileSignature extends Model {
                 url: {
                     type: Sequelize.VIRTUAL,
                     get() {
-                        return `http://localhost:3000/filesignature/${this.path}`;
+                        ////http://localhost:3001
+                        // return `http://134.209.74.174/filesignature/${this.path}`;
+                        return `http://localhost:3001/filesignature/${this.path}`;
                     },
                 },
             },

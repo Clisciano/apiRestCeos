@@ -1,4 +1,5 @@
 import FileSignature from '../models/FileSignature.js';
+import PhysicalPerson from '../models/PhysicalPerson.js';
 
 class FileSignaturesController {
     async store(req, res) {
@@ -20,6 +21,13 @@ class FileSignaturesController {
 
         const personSignature = await FileSignature.findAll({
             where: { person_pf_id: id },
+
+            include: [
+                {
+                    model: PhysicalPerson,
+                    attributes: ['id', 'nome'],
+                },
+            ],
         });
 
         return res.json(personSignature);

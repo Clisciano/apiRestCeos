@@ -1,4 +1,5 @@
 import FilePhoto from '../models/FilePhoto.js';
+import FileSignature from '../models/FileSignature.js';
 import PhysicalPerson from '../models/PhysicalPerson.js';
 
 class PhysicalPersonController {
@@ -57,7 +58,13 @@ class PhysicalPersonController {
                     model: FilePhoto,
                     attributes: ['id', 'nome', 'path', 'url'],
                 },
+                {
+                    where: { person_pf_id: id},
+                    model: FileSignature,
+                    attributes: ['id', 'nome', 'path','person_pf_id', 'url']
+                },
             ],
+
         });
 
         return res.json(person);
