@@ -2,6 +2,7 @@ import Sequelize, { Model } from 'sequelize';
 import FilePhoto from './FilePhoto.js';
 import FileSignature from './FileSignature.js';
 import Identity from './Identity.js';
+import Note from './Note.js';
 import Address from './AddressPf.js';
 import Contact from './Contact.js';
 import Vehicle from './Vehicle.js';
@@ -44,6 +45,7 @@ class PhysicalPerson extends Model {
         this.belongsTo(User, { foreignKey: 'user_id' });
         this.hasMany(Infopen, { foreignKey: 'person_pf_id' });
         this.hasMany(Identity, { foreignKey: 'person_pf_id' });
+        this.hasMany(Note, { foreignKey: 'person_pf_id' });
         this.hasMany(Address, { foreignKey: 'person_pf_id' });
         this.hasMany(Contact, { foreignKey: 'person_pf_id' });
         this.hasMany(Vehicle, { foreignKey: 'person_pf_id' });
