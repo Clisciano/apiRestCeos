@@ -51,7 +51,7 @@ class PhysicalPersonController {
     async show(req, res) {
         const { id } = req.params;
 
-        const person = await PhysicalPerson.findAll({
+        const person = await PhysicalPerson.findOne({
             where: { id },
             include: [
                 {
@@ -59,7 +59,7 @@ class PhysicalPersonController {
                     attributes: ['id', 'nome', 'path', 'url'],
                 },
                 {
-                    where: { person_pf_id: id},
+                    person_pf_id: id,
                     model: FileSignature,
                     attributes: ['id', 'nome', 'path','person_pf_id', 'url']
                 },

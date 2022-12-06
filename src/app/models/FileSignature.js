@@ -26,11 +26,6 @@ class FileSignature extends Model {
         return this;
     }
 
-    // static associate() {
-    //     this.belongsTo(PhysicalPerson, {
-    //         foreignKey: 'id',
-    //     });
-    // }
     static associate() {
         this.belongsTo(PhysicalPerson, { foreignKey: 'person_pf_id' });
     }
