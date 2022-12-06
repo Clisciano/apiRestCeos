@@ -100,6 +100,7 @@ class PhysicalPersonController {
             pai,
             conjuge,
             file_photo_id,
+            user_id,
         } = req.body;
 
         const physicalPersonExists = await PhysicalPerson.findOne({
@@ -126,6 +127,7 @@ class PhysicalPersonController {
             pai,
             conjuge,
             file_photo_id,
+            user_id,
         });
 
         return res.json(response);
