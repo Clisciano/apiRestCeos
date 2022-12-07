@@ -1,7 +1,7 @@
 import Note from '../models/Notes.js';
 import PhysicalPerson from '../models/PhysicalPerson.js';
 
-class NoteController {
+class NotesController {
     async store(req, res) {
         const { id, descricao, person_pf_id } =
             await Note.create(req.body);
@@ -17,13 +17,13 @@ class NoteController {
         const { id } = req.params;
 
         const person = await PhysicalPerson.findOne({
-            attributes: ['nome'],
+            attributes: ['id'],
             where: { id },
             include: [
                 {
                     model: Note,
-                    where: { person_pf_id: id },
-                    attributes: ['id', 'descricao'],
+                    person_pf_id: id,
+                    attributes: ['descricao'],
                 },
             ],
         });
@@ -77,4 +77,4 @@ class NoteController {
     }
 }
 
-export default new NoteController();
+export default new NotesController();
