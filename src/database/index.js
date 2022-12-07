@@ -7,6 +7,7 @@ import FilePhoto from '../app/models/FilePhoto.js';
 import FileSignature from '../app/models/FileSignature.js';
 import PhysicalPerson from '../app/models/PhysicalPerson.js';
 import Identity from '../app/models/Identity.js';
+import Notes from '../app/models/Notes.js';
 import Address from '../app/models/AddressPf.js';
 import Contact from '../app/models/Contact.js';
 import Vehicle from '../app/models/Vehicle.js';
@@ -38,6 +39,7 @@ const models = [
     Weapon,
     Infopen,
     Visitor,
+    Notes,
 ];
 
 class Database {
